@@ -8,7 +8,6 @@ const mongoose = require('mongoose')
 const route = require('./route/routes.js');
 const port = 3000
 const uri = 'mongodb+srv://sonumonu:sonumonu@cluster0.ve68i.mongodb.net/mytestone';
-// Prints "MongoServerError: bad auth Authentication failed."
 mongoose.connect(uri, {
   serverSelectionTimeoutMS: 5000
 }).catch(err => console.log(err.reason));
